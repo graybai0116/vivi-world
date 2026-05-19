@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小黑狗的小世界 · Vivi 农场</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">🐾 小黑狗的小世界</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于小黑狗</a></li>
+                <li><a href="#life" class="nav-link">农场日常</a></li>
+                <li><a href="#favorites" class="nav-link">最爱清单</a></li>
+                <li><a href="#album" class="nav-link">相册</a></li>
+                <li><a href="#board" class="nav-link">留言板</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-bg-decorations" aria-hidden="true">
+            <div class="float-elem paw-1">🐾</div>
+            <div class="float-elem heart-1">❤️</div>
+            <div class="float-elem star-1">🌿</div>
+            <div class="float-elem paw-2">🐾</div>
+            <div class="float-elem heart-2">💕</div>
+            <div class="float-elem star-2">🌸</div>
+        </div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">🌿 来自山露星谷 · Vivi 农场</div>
+                <h1>
+                    <span class="vivi-name">小黑狗</span>
+                    <span class="world-text">的 · 小 · 世 · 界</span>
+                </h1>
+                <p class="hero-desc">
+                    在绿草如茵的山露星谷，有一座 Vivi 农场。农场的主人是活泼可爱的 Vivi，
+                    而农场里最受欢迎的小家伙，就是这只毛茸茸的小黑狗——
+                    每天追鸡赶鸭，跑遍每一寸草地，是农场的快乐源泉。
+                </p>
+                <div class="hero-tags">
+                    <span class="hero-tag">🌾 农场出生</span>
+                    <span class="hero-tag">🎾 活力炸弹</span>
+                    <span class="hero-tag">😴 午睡专家</span>
+                    <span class="hero-tag">🍖 吃货本货</span>
+                </div>
+                <div class="hero-cta">
+                    <a href="#about" class="btn-primary">认识小黑狗 ↓</a>
+                    <a href="#board" class="btn-secondary">给小黑狗留言 ❤️</a>
+                </div>
+            </div>
+
+            <!-- Farm Scene Illustration -->
+            <div class="hero-visual">
+                <div class="farm-scene">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 400" class="farm-svg">
+                        <defs>
+                            <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#b3d9f5"/>
+                                <stop offset="100%" stop-color="#e8f6ff"/>
+                            </linearGradient>
+                            <linearGradient id="meadowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#7dcf7d"/>
+                                <stop offset="100%" stop-color="#4aad4a"/>
+                            </linearGradient>
+                            <radialGradient id="dogEye" cx="35%" cy="35%">
+                                <stop offset="0%" stop-color="#d4a020"/>
+                                <stop offset="40%" stop-color="#7A4500"/>
+                                <stop offset="75%" stop-color="#3d1a00"/>
+                                <stop offset="100%" stop-color="#1a0800"/>
+                            </radialGradient>
+                        </defs>
+
+                        <!-- ── SKY ── -->
+                        <rect width="420" height="400" fill="url(#skyGrad)"/>
+
+                        <!-- Clouds -->
+                        <g opacity="0.92">
+                            <ellipse cx="55" cy="55" rx="38" ry="16" fill="white"/>
+                            <ellipse cx="82" cy="44" rx="28" ry="18" fill="white"/>
+                            <ellipse cx="32" cy="50" rx="22" ry="13" fill="white"/>
+                        </g>
+                        <g opacity="0.85">
+                            <ellipse cx="330" cy="70" rx="34" ry="14" fill="white"/>
+                            <ellipse cx="354" cy="58" rx="26" ry="17" fill="white"/>
+                            <ellipse cx="308" cy="65" rx="20" ry="11" fill="white"/>
+                        </g>
+
+                        <!-- ── MOUNTAINS ── -->
+                        <polygon points="0,230 75,135 155,230" fill="#a8c8a0"/>
+                        <polygon points="90,230 190,105 290,230" fill="#88b890"/>
+                        <polygon points="220,230 330,90 420,230" fill="#6faa7f"/>
+                        <!-- Mountain snow caps -->
+                        <polygon points="190,105 210,125 170,125" fill="white" opacity="0.7"/>
+                        <polygon points="330,90 348,112 312,112" fill="white" opacity="0.6"/>
+
+                        <!-- ── MEADOW ── -->
+                        <rect x="0" y="228" width="420" height="172" fill="url(#meadowGrad)"/>
+                        <ellipse cx="210" cy="230" rx="210" ry="14" fill="#8dd480" opacity="0.8"/>
+
+                        <!-- Grass tufts -->
+                        <g fill="#5ab85a">
+                            <ellipse cx="30" cy="234" rx="12" ry="5"/>
+                            <ellipse cx="80" cy="232" rx="10" ry="4"/>
+                            <ellipse cx="380" cy="234" rx="11" ry="4"/>
+                        </g>
+
+                        <!-- ── FENCE (left) ── -->
+                        <g fill="#9B7740">
+                            <rect x="8" y="232" width="7" height="45" rx="3"/>
+                            <rect x="38" y="232" width="7" height="45" rx="3"/>
+                            <rect x="68" y="232" width="7" height="45" rx="3"/>
+                        </g>
+                        <g fill="#b8904a">
+                            <rect x="10" y="239" width="34" height="5" rx="2"/>
+                            <rect x="10" y="253" width="34" height="5" rx="2"/>
+                            <rect x="40" y="239" width="34" height="5" rx="2"/>
+                            <rect x="40" y="253" width="34" height="5" rx="2"/>
+                        </g>
+
+                        <!-- Flowers -->
+                        <g>
+                            <circle cx="90" cy="229" r="5" fill="#FF6B6B"/>
+                            <line x1="90" y1="234" x2="90" y2="241" stroke="#4aad4a" stroke-width="1.5"/>
+                            <circle cx="105" cy="232" r="4" fill="#FFD93D"/>
+                            <line x1="105" y1="236" x2="105" y2="243" stroke="#4aad4a" stroke-width="1.5"/>
+                            <circle cx="118" cy="228" r="5" fill="#FF9999"/>
+                            <line x1="118" y1="233" x2="118" y2="240" stroke="#4aad4a" stroke-width="1.5"/>
+                            <circle cx="380" cy="229" r="4" fill="#FFD93D"/>
+                            <circle cx="395" cy="231" r="5" fill="#FF6B6B"/>
+                        </g>
+
+                        <!-- ── FARM SIGN ── -->
+                        <rect x="10" y="148" width="92" height="38" rx="5" fill="#9B7720"/>
+                        <rect x="12" y="150" width="88" height="34" rx="4" fill="#F5DEB3"/>
+                        <text x="56" y="165" text-anchor="middle" font-size="9.5" fill="#5a3800" font-family="sans-serif" font-weight="bold">🌿 Vivi 农场</text>
+                        <text x="56" y="178" text-anchor="middle" font-size="8" fill="#7a5820" font-family="sans-serif">山露星谷</text>
+                        <!-- Sign post -->
+                        <rect x="54" y="186" width="5" height="46" rx="2" fill="#9B7720"/>
+
+                        <!-- ══════════════════════
+                             VIVI GIRL CHARACTER
+                             ══════════════════════ -->
+
+                        <!-- Long hair (back layer) -->
+                        <path d="M302 180 Q278 240 280 340" stroke="#1a1a1a" stroke-width="22" fill="none" stroke-linecap="round"/>
+                        <path d="M348 180 Q372 240 370 340" stroke="#1a1a1a" stroke-width="22" fill="none" stroke-linecap="round"/>
+
+                        <!-- Boots -->
+                        <rect x="303" y="355" width="21" height="35" rx="6" fill="#3d2800"/>
+                        <rect x="336" y="355" width="21" height="35" rx="6" fill="#3d2800"/>
+                        <rect x="300" y="347" width="27" height="13" rx="5" fill="#4d3500"/>
+                        <rect x="333" y="347" width="27" height="13" rx="5" fill="#4d3500"/>
+                        <!-- Boot detail -->
+                        <rect x="307" y="350" width="9" height="5" rx="2" fill="#c8a200"/>
+                        <rect x="340" y="350" width="9" height="5" rx="2" fill="#c8a200"/>
+
+                        <!-- Legs -->
+                        <rect x="307" y="310" width="18" height="48" rx="6" fill="#4a6fb0"/>
+                        <rect x="335" y="310" width="18" height="48" rx="6" fill="#4a6fb0"/>
+
+                        <!-- Overall body -->
+                        <rect x="298" y="238" width="64" height="78" rx="10" fill="#5b8dd9"/>
+                        <!-- White shirt (showing at waist) -->
+                        <rect x="298" y="238" width="64" height="20" rx="5" fill="#f0f0f0"/>
+                        <!-- Overall bib -->
+                        <rect x="308" y="215" width="44" height="50" rx="8" fill="#5b8dd9"/>
+                        <!-- Bib pocket -->
+                        <rect x="316" y="248" width="28" height="20" rx="5" fill="#4a7ac7"/>
+                        <path d="M 320 250 L 340 250" stroke="#3a6ab7" stroke-width="1.5"/>
+                        <!-- Straps -->
+                        <rect x="310" y="210" width="11" height="32" rx="5" fill="#5b8dd9"/>
+                        <rect x="339" y="210" width="11" height="32" rx="5" fill="#5b8dd9"/>
+
+                        <!-- Neck -->
+                        <rect x="318" y="200" width="24" height="18" rx="5" fill="#f5c5a5"/>
+
+                        <!-- Head -->
+                        <circle cx="330" cy="177" r="40" fill="#f5c5a5"/>
+
+                        <!-- Hair (front top) -->
+                        <path d="M294 168 Q298 136 330 130 Q362 136 366 168 Q354 150 330 150 Q306 150 294 168" fill="#1a1a1a"/>
+                        <!-- Bangs -->
+                        <path d="M295 167 Q305 158 318 162" fill="#1a1a1a"/>
+                        <path d="M365 167 Q355 158 342 162" fill="#1a1a1a"/>
+                        <!-- Side strands -->
+                        <path d="M295 167 Q289 198 292 226" stroke="#1a1a1a" stroke-width="16" fill="none" stroke-linecap="round"/>
+                        <path d="M365 167 Q371 198 368 226" stroke="#1a1a1a" stroke-width="16" fill="none" stroke-linecap="round"/>
+
+                        <!-- ── COWBOY HAT ── -->
+                        <!-- Brim -->
+                        <ellipse cx="330" cy="142" rx="52" ry="11" fill="#8B6914"/>
+                        <!-- Crown -->
+                        <rect x="297" y="102" width="66" height="44" rx="9" fill="#9B7720"/>
+                        <!-- Top indent -->
+                        <rect x="306" y="97" width="48" height="14" rx="7" fill="#8B6914"/>
+                        <!-- Band -->
+                        <rect x="297" y="137" width="66" height="8" rx="3" fill="#6B4F0F"/>
+                        <!-- Hat buckle -->
+                        <rect x="345" y="138" width="13" height="6" rx="2" fill="#d4a800"/>
+                        <!-- Flower decoration -->
+                        <circle cx="300" cy="143" r="8" fill="#DC2626"/>
+                        <circle cx="300" cy="143" r="5" fill="#FF7B7B"/>
+                        <circle cx="300" cy="143" r="2.5" fill="#FFD93D"/>
+
+                        <!-- Eyebrows -->
+                        <path d="M313 161 Q320 157 326 160" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M334 160 Q340 157 347 161" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+                        <!-- Eyes (anime, big, based on Vivi's photos — large dark irises) -->
+                        <!-- Left eye -->
+                        <ellipse cx="320" cy="175" rx="11" ry="13" fill="white"/>
+                        <ellipse cx="320" cy="176" rx="8.5" ry="10" fill="#1a1a1a"/>
+                        <ellipse cx="320" cy="175" rx="6" ry="7.5" fill="#22223a"/>
+                        <circle cx="322" cy="172" r="3.5" fill="white"/>
+                        <circle cx="317" cy="179" r="1.5" fill="white" opacity="0.5"/>
+                        <!-- Eyelashes L -->
+                        <path d="M310 166 Q313 161 319 162" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M314 163 L315 159" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        <path d="M320 162 L320 158" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+                        <!-- Right eye -->
+                        <ellipse cx="340" cy="175" rx="11" ry="13" fill="white"/>
+                        <ellipse cx="340" cy="176" rx="8.5" ry="10" fill="#1a1a1a"/>
+                        <ellipse cx="340" cy="175" rx="6" ry="7.5" fill="#22223a"/>
+                        <circle cx="342" cy="172" r="3.5" fill="white"/>
+                        <circle cx="337" cy="179" r="1.5" fill="white" opacity="0.5"/>
+                        <!-- Eyelashes R -->
+                        <path d="M350 166 Q347 161 341 162" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M346 163 L345 159" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        <path d="M340 162 L340 158" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+                        <!-- Anime blush -->
+                        <ellipse cx="307" cy="185" rx="10" ry="6" fill="#ffb3c1" opacity="0.65"/>
+                        <ellipse cx="353" cy="185" rx="10" ry="6" fill="#ffb3c1" opacity="0.65"/>
+
+                        <!-- Nose (subtle) -->
+                        <path d="M327 192 Q330 195 333 192" stroke="#c47a60" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+                        <!-- Smile (with glossy lips like the photos) -->
+                        <path d="M322 202 Q330 210 338 202" stroke="#e8556a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+                        <!-- Arm (reaching out playfully) -->
+                        <path d="M298 258 Q272 285 255 305" stroke="#f5c5a5" stroke-width="16" fill="none" stroke-linecap="round"/>
+                        <circle cx="251" cy="308" r="11" fill="#f5c5a5"/>
+
+                        <!-- ══════════════════════
+                             LITTLE BLACK DOG
+                             ══════════════════════ -->
+
+                        <!-- Shadow -->
+                        <ellipse cx="175" cy="385" rx="58" ry="9" fill="#2a8a2a" opacity="0.35"/>
+
+                        <!-- Tail (wagging) -->
+                        <path d="M222 308 Q258 278 252 242" stroke="#1c1c1c" stroke-width="18" fill="none" stroke-linecap="round"/>
+                        <path d="M252 242 Q260 228 255 215" stroke="#1c1c1c" stroke-width="14" fill="none" stroke-linecap="round"/>
+
+                        <!-- Body -->
+                        <ellipse cx="175" cy="335" rx="60" ry="50" fill="#1c1c1c"/>
+
+                        <!-- Head -->
+                        <circle cx="168" cy="273" r="52" fill="#1c1c1c"/>
+
+                        <!-- Ears (floppy lab style) -->
+                        <!-- Left ear -->
+                        <path d="M128 248 Q108 260 112 295 Q120 310 138 308 Q145 285 140 262" fill="#111111"/>
+                        <!-- Right ear -->
+                        <path d="M208 248 Q228 260 224 295 Q216 310 198 308 Q191 285 196 262" fill="#111111"/>
+
+                        <!-- Muzzle (slightly lighter for depth) -->
+                        <ellipse cx="168" cy="295" rx="28" ry="20" fill="#2a2a2a"/>
+
+                        <!-- Left eye (detailed amber) -->
+                        <circle cx="148" cy="270" r="13" fill="#c8940a"/>
+                        <circle cx="148" cy="270" r="10" fill="#7A4500"/>
+                        <circle cx="148" cy="270" r="7" fill="#3d1a00"/>
+                        <circle cx="144" cy="266" r="4" fill="white"/>
+                        <circle cx="152" cy="274" r="2" fill="white" opacity="0.4"/>
+
+                        <!-- Right eye -->
+                        <circle cx="188" cy="270" r="13" fill="#c8940a"/>
+                        <circle cx="188" cy="270" r="10" fill="#7A4500"/>
+                        <circle cx="188" cy="270" r="7" fill="#3d1a00"/>
+                        <circle cx="184" cy="266" r="4" fill="white"/>
+                        <circle cx="192" cy="274" r="2" fill="white" opacity="0.4"/>
+
+                        <!-- Nose (detailed) -->
+                        <ellipse cx="168" cy="288" rx="11" ry="8" fill="#111"/>
+                        <ellipse cx="164" cy="285" rx="3.5" ry="2.5" fill="#444" opacity="0.4"/>
+                        <!-- Nose line -->
+                        <line x1="168" y1="296" x2="168" y2="301" stroke="#333" stroke-width="1.5"/>
+
+                        <!-- Happy mouth -->
+                        <path d="M155 303 Q168 313 181 303" stroke="#555" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <!-- Tongue (sticking out) -->
+                        <ellipse cx="168" cy="312" rx="12" ry="9" fill="#FF8888"/>
+                        <line x1="168" y1="310" x2="168" y2="320" stroke="#FF7070" stroke-width="2"/>
+                        <!-- Tongue shine -->
+                        <ellipse cx="163" cy="311" rx="3" ry="2" fill="#FFaabb" opacity="0.6"/>
+
+                        <!-- Red bandana -->
+                        <path d="M133 318 L205 318 L198 342 L168 352 L138 342 Z" fill="#DC2626"/>
+                        <path d="M161 318 L175 318 L177 338 L168 344 L159 338 Z" fill="#B91C1C"/>
+                        <!-- Bandana pattern -->
+                        <path d="M140 322 L202 322" stroke="#FF4444" stroke-width="1" opacity="0.4"/>
+
+                        <!-- Front left paw -->
+                        <ellipse cx="143" cy="382" rx="25" ry="15" fill="#1c1c1c"/>
+                        <ellipse cx="134" cy="388" rx="8" ry="6" fill="#151515"/>
+                        <ellipse cx="143" cy="391" rx="8" ry="6" fill="#151515"/>
+                        <ellipse cx="152" cy="388" rx="8" ry="6" fill="#151515"/>
+
+                        <!-- Front right paw -->
+                        <ellipse cx="207" cy="382" rx="25" ry="15" fill="#1c1c1c"/>
+                        <ellipse cx="198" cy="388" rx="8" ry="6" fill="#151515"/>
+                        <ellipse cx="207" cy="391" rx="8" ry="6" fill="#151515"/>
+                        <ellipse cx="216" cy="388" rx="8" ry="6" fill="#151515"/>
+
+                    </svg>
+
+                    <!-- Floating labels -->
+                    <div class="scene-label dog-label">小黑狗 🐾</div>
+                    <div class="scene-label vivi-label">Vivi 🌸</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="向下滚动">
+            <span>向下探索</span>
+            <div class="scroll-arrow">↓</div>
+        </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">关于小黑狗</div>
+                <h2>住在 <span class="highlight">Vivi 农场</span> 的那只小家伙</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🌿</div>
+                    <h3>Vivi 农场</h3>
+                    <p>山露星谷的绿色草原上，有一座被花朵包围的小农场。农场的主人是活泼可爱的 Vivi——戴牛仔帽、穿蓝色背带裤、踩着小靴子，每天和小动物们一起玩耍。</p>
+                </div>
+                <div class="about-card featured">
+                    <div class="vivi-info">
+                        <!-- Mini dog head in CSS -->
+                        <div class="info-avatar-css">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+                                <circle cx="50" cy="50" r="48" fill="#1c1c1c"/>
+                                <!-- Ears -->
+                                <path d="M22 35 Q10 42 14 65 Q20 72 32 70 Q36 55 30 38" fill="#111"/>
+                                <path d="M78 35 Q90 42 86 65 Q80 72 68 70 Q64 55 70 38" fill="#111"/>
+                                <!-- Muzzle -->
+                                <ellipse cx="50" cy="62" rx="18" ry="14" fill="#2a2a2a"/>
+                                <!-- Eyes -->
+                                <circle cx="36" cy="46" r="10" fill="#c8940a"/>
+                                <circle cx="36" cy="46" r="7" fill="#3d1a00"/>
+                                <circle cx="33" cy="43" r="3" fill="white"/>
+                                <circle cx="64" cy="46" r="10" fill="#c8940a"/>
+                                <circle cx="64" cy="46" r="7" fill="#3d1a00"/>
+                                <circle cx="61" cy="43" r="3" fill="white"/>
+                                <!-- Nose -->
+                                <ellipse cx="50" cy="57" rx="8" ry="5" fill="#111"/>
+                                <!-- Smile + tongue -->
+                                <path d="M42 68 Q50 75 58 68" stroke="#555" stroke-width="2" fill="none"/>
+                                <ellipse cx="50" cy="74" rx="7" ry="5" fill="#FF8888"/>
+                                <!-- Bandana -->
+                                <path d="M28 82 L72 82 L68 92 L50 96 L32 92 Z" fill="#DC2626"/>
+                            </svg>
+                        </div>
+                        <div class="info-details">
+                            <h3>小黑狗 · 农场守护者</h3>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <span class="info-label">品种</span>
+                                    <span class="info-value">黑色拉布拉多</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">家乡</span>
+                                    <span class="info-value">山露星谷 Vivi 农场</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">年龄</span>
+                                    <span class="info-value">2 岁（正是淘气期）</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">绝技</span>
+                                    <span class="info-value">追鸡、翻垃圾桶 🐔</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">主人</span>
+                                    <span class="info-value">Vivi（超宠我的！）</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">👩‍🌾</div>
+                    <h3>主人 Vivi</h3>
+                    <p>活泼开朗的农场主 Vivi 是小黑狗最爱的人。每天早上，Vivi 戴上牛仔帽、穿上蓝色背带裤，带着小黑狗一起巡视农场，是最好的玩伴和最暖的家人。</p>
+                </div>
+            </div>
+            <div class="personality-section">
+                <h3 class="personality-title">🏷️ 小黑狗的性格标签</h3>
+                <div class="personality-tags">
+                    <span class="ptag red">精力无限</span>
+                    <span class="ptag pink">爱撒娇</span>
+                    <span class="ptag">吃什么都香</span>
+                    <span class="ptag pink">怕打雷</span>
+                    <span class="ptag red">追鸡高手</span>
+                    <span class="ptag">阳光充电器</span>
+                    <span class="ptag pink">软乎乎的</span>
+                    <span class="ptag">爱交新朋友</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farm Life / Timeline -->
+    <section id="life" class="section life-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">农场日常</div>
+                <h2>小黑狗的<span class="highlight">一天</span>，忙碌又快乐</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">06:30</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="tc-icon">🌅</div>
+                        <h4>晨跑巡逻</h4>
+                        <p>天刚亮，小黑狗已经在草地上奔跑了。先跑一圈确认昨晚没有入侵者，顺便追了三只鸡和一只鸭。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-time">08:00</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="tc-icon">🍖</div>
+                        <h4>等 Vivi 喂饭</h4>
+                        <p>Vivi 还没醒，小黑狗就已经坐在门口等待了。眼神无辜，但脑子里只有：饭·饭·饭·饭。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:00</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="tc-icon">🎾</div>
+                        <h4>跟 Vivi 玩耍</h4>
+                        <p>Vivi 扔球，小黑狗去捡——这个游戏可以玩一整个上午。Vivi 说她扔了100次，小黑狗说她明显少扔了。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-time">13:00</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="tc-icon">☀️</div>
+                        <h4>草地午睡</h4>
+                        <p>找到草地上最晒的一块地方，四脚朝天躺平。风吹过来，草香混着泥土味，睡得天昏地暗。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">15:30</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="tc-icon">🐄</div>
+                        <h4>农场社交</h4>
+                        <p>去和农场的牛大哥打招呼，闻闻羊咩咩的气味，顺手翻一下垃圾桶（Vivi 说了不能翻，但就翻了一下）。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-time">20:00</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="tc-icon">🌙</div>
+                        <h4>靠着 Vivi 睡觉</h4>
+                        <p>一天结束了。小黑狗挤进 Vivi 的旁边，把头搭在她腿上，发出满足的叹气声。这是农场最好的时刻。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites -->
+    <section id="favorites" class="section favorites-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">最爱清单</div>
+                <h2>这些东西，<span class="highlight">小黑狗爱到不行！</span></h2>
+            </div>
+            <div class="favorites-grid">
+                <div class="fav-card">
+                    <div class="fav-visual" style="background: linear-gradient(135deg, #fce4ec, #f06292);">
+                        <span class="fav-big-emoji">🧣</span>
+                    </div>
+                    <div class="fav-info">
+                        <h4>红色领巾</h4>
+                        <p>Vivi 亲手给系上的红领巾，是小黑狗的身份标志。摘掉了它就不像自己了。每天早上 Vivi 帮系好，才算正式开始新的一天。</p>
+                        <div class="love-meter">
+                            <span>喜爱程度</span>
+                            <div class="hearts">❤️❤️❤️❤️❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <div class="fav-visual" style="background: linear-gradient(135deg, #e8f5e9, #66bb6a);">
+                        <span class="fav-big-emoji">🎾</span>
+                    </div>
+                    <div class="fav-info">
+                        <h4>Vivi 的旧网球</h4>
+                        <p>Vivi 打网球剩下的旧球，被小黑狗当成宝贝。已经咬秃了，棉絮都露出来了，但就是不肯换新的。</p>
+                        <div class="love-meter">
+                            <span>喜爱程度</span>
+                            <div class="hearts">❤️❤️❤️❤️❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <div class="fav-visual" style="background: linear-gradient(135deg, #fff9c4, #ffca28);">
+                        <span class="fav-big-emoji">🍗</span>
+                    </div>
+                    <div class="fav-info">
+                        <h4>农场土鸡腿</h4>
+                        <p>Vivi 农场自己养的鸡做的鸡腿，小黑狗能闻着香味从100米外跑过来。看到鸡腿，一切障碍都不是障碍。</p>
+                        <div class="love-meter">
+                            <span>喜爱程度</span>
+                            <div class="hearts">❤️❤️❤️❤️❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <div class="fav-visual" style="background: linear-gradient(135deg, #e3f2fd, #42a5f5);">
+                        <span class="fav-big-emoji">💧</span>
+                    </div>
+                    <div class="fav-info">
+                        <h4>草地上的水坑</h4>
+                        <p>下雨后草地上会积一个小水坑，小黑狗会用整个身子扑进去，然后带着一身泥来找 Vivi 拥抱（Vivi：……）。</p>
+                        <div class="love-meter">
+                            <span>喜爱程度</span>
+                            <div class="hearts">❤️❤️❤️❤️❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <div class="fav-visual" style="background: linear-gradient(135deg, #fce4ec, #e91e63);">
+                        <span class="fav-big-emoji">👩‍🌾</span>
+                    </div>
+                    <div class="fav-info">
+                        <h4>Vivi 本人</h4>
+                        <p>最爱的当然是 Vivi！只要 Vivi 一回到农场，小黑狗就会跑过去绕圈圈，差点把 Vivi 绊倒，每次都这样，乐此不疲。</p>
+                        <div class="love-meter">
+                            <span>喜爱程度</span>
+                            <div class="hearts">❤️❤️❤️❤️❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <div class="fav-visual" style="background: linear-gradient(135deg, #f3e5f5, #ab47bc);">
+                        <span class="fav-big-emoji">🛋️</span>
+                    </div>
+                    <div class="fav-info">
+                        <h4>Vivi 的旧毯子</h4>
+                        <p>Vivi 用过的旧毯子，被小黑狗占为己有。上面有 Vivi 的味道，闻着就安心，哪都不想去，就窝在上面睡。</p>
+                        <div class="love-meter">
+                            <span>喜爱程度</span>
+                            <div class="hearts">❤️❤️❤️❤️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Album -->
+    <section id="album" class="section album-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">相册</div>
+                <h2>农场里的<span class="highlight">珍贵瞬间</span></h2>
+            </div>
+            <div class="album-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="outdoor">草地日常</button>
+                <button class="filter-btn" data-filter="indoor">农舍时光</button>
+                <button class="filter-btn" data-filter="food">吃吃喝喝</button>
+                <button class="filter-btn" data-filter="sleep">睡觉睡觉</button>
+            </div>
+            <div class="album-grid">
+                <div class="album-item" data-cat="outdoor">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #a8edea, #7dc97d);">
+                        <span>🌿</span>
+                    </div>
+                    <div class="album-overlay"><p>早晨巡逻完毕！ 🌿</p></div>
+                </div>
+                <div class="album-item big" data-cat="outdoor">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #b8f0a0, #4aad4a);">
+                        <span>🐕</span>
+                    </div>
+                    <div class="album-overlay"><p>和 Vivi 在草地上追球 ❤️</p></div>
+                </div>
+                <div class="album-item" data-cat="food">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #fff1eb, #ffd580);">
+                        <span>🍗</span>
+                    </div>
+                    <div class="album-overlay"><p>今天的鸡腿特别香 ✨</p></div>
+                </div>
+                <div class="album-item" data-cat="sleep">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #e0c3fc, #b8d4f0);">
+                        <span>😴</span>
+                    </div>
+                    <div class="album-overlay"><p>四脚朝天，充电中... 😴</p></div>
+                </div>
+                <div class="album-item" data-cat="outdoor">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #d4fc79, #6faa7f);">
+                        <span>💧</span>
+                    </div>
+                    <div class="album-overlay"><p>水坑里打了个滚 💧</p></div>
+                </div>
+                <div class="album-item" data-cat="indoor">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+                        <span>🛋️</span>
+                    </div>
+                    <div class="album-overlay"><p>占领 Vivi 的沙发 🛋️</p></div>
+                </div>
+                <div class="album-item big" data-cat="outdoor">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #fddb92, #a8edea);">
+                        <span>🌄</span>
+                    </div>
+                    <div class="album-overlay"><p>山露星谷的黄昏 🌄</p></div>
+                </div>
+                <div class="album-item" data-cat="food">
+                    <div class="album-placeholder" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <span>🎂</span>
+                    </div>
+                    <div class="album-overlay"><p>生日快乐！蛋糕是我的 🎂</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Board -->
+    <section id="board" class="section board-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">留言板</div>
+                <h2>给小黑狗<span class="highlight">留下你的话</span></h2>
+                <p class="section-desc">小黑狗每天都会认真阅读每一条留言（Vivi 会念给它听的）</p>
+            </div>
+            <div class="board-layout">
+                <div class="message-form">
+                    <h3>写下你的话 ✏️</h3>
+                    <div class="form-group">
+                        <label for="msgName">你的名字</label>
+                        <input type="text" id="msgName" placeholder="告诉小黑狗你是谁~" maxlength="20">
+                    </div>
+                    <div class="form-group">
+                        <label>选一个心情</label>
+                        <div class="mood-picker">
+                            <span class="mood-btn active" data-mood="❤️">❤️</span>
+                            <span class="mood-btn" data-mood="🐾">🐾</span>
+                            <span class="mood-btn" data-mood="🌿">🌿</span>
+                            <span class="mood-btn" data-mood="🎾">🎾</span>
+                            <span class="mood-btn" data-mood="😄">😄</span>
+                            <span class="mood-btn" data-mood="🍗">🍗</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="msgContent">你想对小黑狗说</label>
+                        <textarea id="msgContent" placeholder="小黑狗在等你的留言哦..." maxlength="200" rows="4"></textarea>
+                        <div class="char-count"><span id="charCount">0</span> / 200</div>
+                    </div>
+                    <button class="submit-btn" id="submitMsg">送出留言 ❤️</button>
+                </div>
+                <div class="messages-display">
+                    <h3>小黑狗的留言墙 🐾</h3>
+                    <div class="messages-list" id="messagesList"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">🐾 小黑狗的小世界</div>
+                    <p>住在山露星谷 · Vivi 农场</p>
+                    <p>绿草地、蓝天、还有最爱的 Vivi</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#home">🏡 首页</a></li>
+                        <li><a href="#about">🌿 关于小黑狗</a></li>
+                        <li><a href="#life">⏰ 农场日常</a></li>
+                        <li><a href="#favorites">❤️ 最爱清单</a></li>
+                        <li><a href="#album">📷 相册</a></li>
+                        <li><a href="#board">✉️ 留言板</a></li>
+                    </ul>
+                </div>
+                <div class="footer-facts">
+                    <h4>你知道吗？</h4>
+                    <p>🐔 小黑狗已追了437只鸡</p>
+                    <p>🎾 Vivi 给它扔了无数次球</p>
+                    <p>💌 已收到 <span id="footerMsgCount">0</span> 条留言</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 小黑狗的小世界 · Vivi 农场出品 · 山露星谷 · 用 ❤️ 制作</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
