@@ -1,0 +1,19 @@
+{
+  "prompt": "A clean 3x3 photo grid collage of nine real candid photographs of the same black Labrador Retriever puppy with a red bandana, arranged in a neat grid with thin white borders. Each photo is a distinct life moment on a farm: (1) dawn patrol run — dog sprinting across dewy farm grass at sunrise, chasing three chickens and one duck who are scattering in all directions, golden orange light, motion-frozen action shot; (2) mealtime — dog eating eagerly from a stainless steel metal dog bowl on the farm porch, head down, focused, natural morning light from the side, red bandana visible; (3) cozy farmhouse interior — dog curled up on a worn wooden floor inside a rustic farmhouse, warm lamp light, hay bales visible in background, sleeping peacefully; (4) afternoon nap on green grass in warm sunlight, dog curled up on its side, eyes closed, completely relaxed; (5) dog socializing with two black-and-white dairy cows in the farm meadow, dog looking up at the cows curiously, cows looking down at the dog, sunny day; (6) dog sleeping against the legs and boots of a person, only brown leather boots and denim jeans visible from the knee down, no face or torso shown, cozy indoor setting; (7) dog sniffing wildflowers in a meadow, close-up, curious expression, colorful flowers in foreground blurred; (8) dog lying on a wooden farm porch step, chin resting on paws, gazing into the distance, warm afternoon light; (9) dog playing with a red ball on the farm lawn, mid-pounce, ears flopping, tongue out, joyful. All nine photos same black Lab, same red bandana. No human faces visible in any photo. Warm natural farm lighting throughout. Real photography style, no illustrations.",
+  "negative_prompt": "cartoon, anime, illustration, 3D render, CGI, human faces, human body above knees, different dogs, plastic fur, dark indoor, studio lighting, oversaturated, digital art, painted, watermark",
+  "image_input": [
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/9ccbcc95-aa61-4f58-907c-219d5fb6bb02.png"
+  ],
+  "api_parameters": {
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "output_format": "jpg"
+  },
+  "settings": {
+    "style": "candid farm pet photography grid",
+    "lighting": "warm natural outdoor farm light",
+    "camera_angle": "various angles per panel",
+    "depth_of_field": "shallow per panel, subject sharp",
+    "quality": "high detail, consistent dog identity across all 8 panels"
+  }
+}

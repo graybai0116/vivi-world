@@ -342,6 +342,7 @@ button { cursor: pointer; }
    ===================== */
 .section { padding: 5.5rem 2rem; }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -380,7 +381,9 @@ button { cursor: pointer; }
 /* =====================
    ABOUT SECTION
    ===================== */
-.about-section { background: var(--pink-light); }
+.about-section {
+    background: linear-gradient(to bottom, #FEE2E2 0%, #FFF0F0 80px, #FFF0F0 100%);
+}
 
 .about-grid {
     display: grid;
@@ -527,7 +530,10 @@ button { cursor: pointer; }
 }
 
 /* Personality tags */
-.personality-section { text-align: center; }
+.personality-section {
+    text-align: center;
+    background: linear-gradient(to bottom, #FFF0F0 0%, #FFFFFF 80px, #FFFFFF 100%);
+}
 
 .personality-title {
     font-size: 1.1rem;
@@ -564,7 +570,41 @@ button { cursor: pointer; }
 /* =====================
    TIMELINE / LIFE SECTION
    ===================== */
-.life-section { background: var(--white); }
+.life-section {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse 300px 200px at 18% 4%, rgba(255, 210, 80, 0.35) 0%, transparent 70%),
+        linear-gradient(to bottom,
+            #FFFFFF 0%,
+            #fff8d6 80px,
+            #fff3cd 12%,
+            #f4fbf0 32%,
+            #edfaf3 52%,
+            #fef6e4 70%,
+            #fde3c8 85%,
+            #e8d0f0 93%,
+            #d4b8e8 100%
+        );
+}
+
+.life-bg-emoji {
+    position: absolute;
+    pointer-events: none;
+    font-size: 1.4rem;
+    opacity: 0;
+    animation: floatEmoji linear infinite;
+    z-index: 0;
+}
+
+@keyframes floatEmoji {
+    0%   { opacity: 0; transform: translateY(0) scale(0.8); }
+    15%  { opacity: 0.55; }
+    85%  { opacity: 0.55; }
+    100% { opacity: 0; transform: translateY(-60px) scale(1.1); }
+}
+
+.life-section .container { position: relative; z-index: 1; }
 
 .timeline {
     position: relative;
@@ -592,17 +632,27 @@ button { cursor: pointer; }
 
 .timeline-item.right { flex-direction: row-reverse; }
 
-.timeline-time {
-    width: calc(50% - 1.75rem);
+.timeline-photo {
+    width: 180px;
     flex-shrink: 0;
-    font-size: 1.4rem;
-    font-weight: 900;
-    color: var(--red);
-    padding-top: 1rem;
-    text-align: right;
 }
 
-.timeline-item.right .timeline-time { text-align: left; }
+.timeline-photo img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    display: block;
+}
+
+.tc-time {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--red);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.35rem;
+}
 
 .timeline-dot {
     width: 15px;
@@ -617,7 +667,7 @@ button { cursor: pointer; }
 }
 
 .timeline-card {
-    width: calc(50% - 1.75rem);
+    flex: 1;
     background: var(--pink-light);
     border: 1.5px solid var(--border);
     border-radius: var(--radius-sm);
@@ -648,10 +698,13 @@ button { cursor: pointer; }
     line-height: 1.65;
 }
 
+
 /* =====================
    FAVORITES SECTION
    ===================== */
-.favorites-section { background: var(--pink-light); }
+.favorites-section {
+    background: linear-gradient(to bottom, #d4b8e8 0%, #FFF0F0 80px, #FFF0F0 100%);
+}
 
 .favorites-grid {
     display: grid;
@@ -722,7 +775,9 @@ button { cursor: pointer; }
 /* =====================
    ALBUM SECTION
    ===================== */
-.album-section { background: var(--white); }
+.album-section {
+    background: linear-gradient(to bottom, #FFF0F0 0%, #FFFFFF 80px, #FFFFFF 100%);
+}
 
 .album-filter {
     display: flex;
@@ -824,7 +879,9 @@ button { cursor: pointer; }
 /* =====================
    MESSAGE BOARD
    ===================== */
-.board-section { background: var(--pink-light); }
+.board-section {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFF0F0 80px, #FFF0F0 100%);
+}
 
 .board-layout {
     display: grid;
@@ -1142,7 +1199,7 @@ button { cursor: pointer; }
         gap: 1rem;
     }
 
-    .timeline-time { display: none; }
+    .timeline-photo { display: none; }
 
     .timeline-card,
     .timeline-item.right .timeline-card {

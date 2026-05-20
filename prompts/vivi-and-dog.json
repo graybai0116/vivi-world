@@ -3,7 +3,8 @@
   "negative_prompt": "cartoon, anime, illustration, 3D render, CGI, posed stiff, plastic skin, beauty filter, deformed, extra limbs, blurry faces, dark moody, digital art, oversaturated, painted",
   "image_input": [
     "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/RenderedImage.JPG",
-    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/IMG_6312.JPG"
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/IMG_6312.JPG",
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/9ccbcc95-aa61-4f58-907c-219d5fb6bb02.png"
   ],
   "api_parameters": {
     "aspect_ratio": "4:3",
