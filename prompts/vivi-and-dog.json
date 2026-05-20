@@ -1,6 +1,10 @@
 {
   "prompt": "Enhanced candid photograph of a young East Asian woman in her early 20s playing with a black Labrador Retriever puppy on a green farm meadow. The woman has long straight black hair, natural dark eyes, rosy cheeks, genuine laughing expression — head tilted back slightly, mouth open in real laughter. She is crouching down on the grass, one arm outstretched palm-up toward the puppy. Wearing a brown leather cowboy hat, blue denim bib overalls over a white short-sleeve shirt, dark brown leather boots. The black Lab puppy is mid-run toward her — ears flopping, tongue out, red bandana flapping at its neck, paws leaving the grass, tail raised in excitement. Blurred green meadow background, soft wooden fence in far distance, blue sky with clouds. Warm golden afternoon sunlight backlit slightly, creating natural rim light on her hair and the dog's fur. Shot on Sony A7R IV, 85mm f/2.0, ISO 400, fast shutter speed 1/1000s to freeze motion. Natural candid moment, no posing. Do not smooth or retouch. Real photograph quality.",
   "negative_prompt": "cartoon, anime, illustration, 3D render, CGI, posed stiff, plastic skin, beauty filter, deformed, extra limbs, blurry faces, dark moody, digital art, oversaturated, painted",
+  "image_input": [
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/RenderedImage.JPG",
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/IMG_6312.JPG"
+  ],
   "api_parameters": {
     "aspect_ratio": "4:3",
     "resolution": "2K",

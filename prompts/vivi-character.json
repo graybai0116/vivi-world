@@ -1,6 +1,10 @@
 {
   "prompt": "Enhanced portrait photograph of a young East Asian woman in her early 20s, standing in a sunlit green farm meadow. Long straight silky black hair falling past her shoulders, natural and unprocessed. Almond-shaped dark brown eyes, natural double eyelid, subtle eyelashes. Soft round face with naturally rosy cheeks, mild healthy flush from outdoor activity. Full naturally pink lips, no heavy lipstick. Visible skin texture — natural pores, light skin with slight warmth. Wearing a worn brown leather cowboy hat with a small dried red flower tucked into the band, tilted slightly. Blue denim bib overalls, slightly relaxed fit, over a fitted white short-sleeve cotton shirt. Dark brown leather ankle boots, lightly worn. Standing confidently, slight natural smile, relaxed body posture. Background: golden green meadow grass softly blurred, wildflowers scattered, warm afternoon light. Shot on Sony A7R IV, 85mm f/1.8 lens, ISO 200, natural golden hour light from camera-left creating soft warm skin tones and hair highlights. Depth of field: subject tack sharp, background creamy bokeh. Do not add beauty filters, do not smooth skin, do not add makeup. This is a real person photograph, not illustration.",
   "negative_prompt": "cartoon, anime, illustration, 3D render, CGI, plastic skin, smooth skin, beauty filter, heavy makeup, airbrushed, overexposed, dark background, blurry face, extra fingers, deformed, unrealistic, painted, digital art, oversaturated",
+  "image_input": [
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/RenderedImage.JPG",
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/IMG_6312.JPG"
+  ],
   "api_parameters": {
     "aspect_ratio": "3:4",
     "resolution": "2K",
