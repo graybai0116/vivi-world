@@ -1,0 +1,16 @@
+{
+  "prompt": "Enhanced landscape photograph of a stunning green mountain valley farm in golden afternoon light. Lush rolling meadows in the foreground densely covered with wildflowers — bright red poppies, white daisies, yellow buttercups. A rustic wooden farm fence with weathered posts runs across the left foreground. A charming farmhouse with a warm red-orange roof sits nestled in the mid-ground among mature deciduous trees. Beyond it, dramatic snow-capped mountain peaks rise under a vivid blue sky dotted with natural cumulus clouds. A small wooden sign near the fence post reads 'Vivi农场' in carved letters. Crystal clear afternoon light, long soft shadows across the meadow, warm golden haze. Shot on Nikon Z9, 24mm f/8 wide angle, ISO 100, golden hour, everything in crisp focus from foreground flowers to mountain peaks. Hyper-detailed landscape, vibrant natural color palette, National Geographic quality. Do not add people or animals.",
+  "negative_prompt": "cartoon, illustration, 3D render, CGI, digital painting, oversaturated, unnatural colors, flat art, dark, gloomy, blurry, low quality, industrial, urban buildings, people",
+  "api_parameters": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "jpg"
+  },
+  "settings": {
+    "style": "enhanced landscape photography, golden hour, National Geographic",
+    "lighting": "golden hour afternoon sun, long warm shadows",
+    "camera_angle": "wide angle, slight elevation, landscape",
+    "depth_of_field": "f/8, everything in focus",
+    "quality": "hyper-detailed, sharp from foreground to background"
+  }
+}

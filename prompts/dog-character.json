@@ -1,0 +1,16 @@
+{
+  "prompt": "Enhanced photograph of a young black Labrador Retriever puppy, approximately 4 months old, sitting on fresh green farm grass. Glossy jet-black fur catching warm afternoon sunlight with subtle brown undertones visible in strong light. Real fur texture — individual hairs visible, slight shine on the coat. Large warm amber-brown eyes with genuine depth and wet sheen, white catchlight reflection. Broad soft muzzle, shiny black nose with slight nostril detail. Happy relaxed open-mouth expression, bright pink tongue lolling naturally to one side, white teeth visible. Bright red cotton bandana tied neatly around the neck in a simple knot. Puppy proportions — slightly oversized paws, round belly, floppy soft ears. Background: bright green meadow grass softly blurred, wooden farm fence visible in the distance. Shot on Canon EOS R5, 100mm f/2.0, ISO 320, warm afternoon natural sunlight from behind-right creating rim light along the fur edges. Shallow depth of field, dog tack sharp, grass background creamy bokeh. Do not add any digital effects. This is a real dog photograph.",
+  "negative_prompt": "cartoon, illustration, anime, 3D render, CGI, plastic fur, over-sharpened, dark background, scary, aggressive expression, blurry dog, digital painting, deformed, unrealistic, oversaturated colors",
+  "api_parameters": {
+    "aspect_ratio": "3:4",
+    "resolution": "2K",
+    "output_format": "jpg"
+  },
+  "settings": {
+    "style": "enhanced pet photography, natural light",
+    "lighting": "warm afternoon sun, rim light from behind-right",
+    "camera_angle": "eye-level with dog, slight distance",
+    "depth_of_field": "f/2.0, dog sharp, grass bokeh",
+    "quality": "high detail fur texture, realistic wet eyes"
+  }
+}
