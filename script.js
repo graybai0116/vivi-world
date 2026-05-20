@@ -59,15 +59,15 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 // =====================
 // MESSAGE BOARD
 // =====================
-const STORAGE_KEY = 'vivi-messages-v1';
+const STORAGE_KEY = 'vivi-messages-v2';
 let messages     = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
 let selectedMood = '❤️';
 
 // Seed default messages so the board doesn't start empty
 const defaultMessages = [
-    { name: '山露星谷的邻居', mood: '🌿', content: '小黑狗每天在草地上追鸡的样子太可爱了！希望有机会来 Vivi 农场玩！', time: '5月18日 08:00' },
-    { name: '黑狗爱好者', mood: '❤️', content: '小黑狗是我见过最可爱的拉布拉多！那个红领巾真的太配它了！', time: '5月18日 10:30' },
-    { name: '阳光小熊', mood: '🐾', content: '听说你把 Vivi 的垃圾桶翻了？哈哈哈太有个性了！', time: '5月18日 14:22' },
+    { name: '路过的养狗人', mood: '🐾', content: '刚刷到这个网站，那个追鸡的视频描述笑死我了！小黑狗太有个性，以后要多更新！', time: '5月19日 09:12' },
+    { name: '奶牛粉丝团', mood: '🐄', content: '代表农场的牛大哥留言：小黑狗每次来打招呼都很热情，虽然有点吵，但我们是好朋友。', time: '5月19日 13:45' },
+    { name: '山露星谷旅行者', mood: '🌄', content: '上周来 Vivi 农场玩，亲眼看到小黑狗把那个水坑踩得到处都是泥，太真实了哈哈哈！', time: '5月20日 10:08' },
 ];
 
 if (messages.length === 0) {

@@ -1,0 +1,12 @@
+{
+  "prompt": "A clean 2x3 photo grid collage of six real candid photographs of the same black Labrador Retriever puppy with a red bandana, all food and eating themed on a farm. Thin white borders between panels. (1) dog sitting perfectly still in front of a stainless steel food bowl on a wooden porch floor, ears perked, eyes wide with anticipation, mouth slightly open; (2) dog catching a small treat mid-air, mouth wide open, freeze-frame action shot, warm outdoor light; (3) close-up of dog licking its snout contentedly after a meal, eyes half-closed, satisfied expression, food bowl blurred in background; (4) dog sneaking up to a farmhouse kitchen counter, nose lifted high sniffing upward, tiptoeing on hind legs slightly, only counter and dog visible no human faces; (5) dog drinking from a ceramic water bowl outdoors, tongue splashing water into small droplets, action frozen, water flying; (6) dog proudly holding a whole carrot in its mouth, sitting on green grass, looking at camera, red bandana visible. All same black Lab, red bandana. Warm natural farm lighting. Real photography style.",
+  "negative_prompt": "cartoon, anime, CGI, human faces, multiple dogs, studio lighting, oversaturated, digital art, watermark",
+  "image_input": [
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/9ccbcc95-aa61-4f58-907c-219d5fb6bb02.png"
+  ],
+  "api_parameters": {
+    "aspect_ratio": "2:3",
+    "resolution": "1K",
+    "output_format": "jpg"
+  }
+}

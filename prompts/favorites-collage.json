@@ -1,0 +1,12 @@
+{
+  "prompt": "A clean 2x3 photo grid collage of six real close-up photographs, each showing one beloved item or scene from a farm, arranged with thin white borders. All shots warm natural farm lighting, real photography style. (1) top-left: close-up of a bright red cotton bandana neckerchief tied in a neat bow, resting on green farm grass, warm sunlight, vivid red color, soft bokeh background; (2) top-right: close-up of a worn old tennis ball on farm grass, heavily chewed and frayed with cotton fluff poking out, faded yellow-green color, natural light, slightly muddy; (3) middle-left: close-up of a golden roasted chicken drumstick on a rustic wooden plate, glistening skin, farm setting background, warm appetizing light; (4) middle-right: close-up of a small muddy rain puddle on green farm grass, clear water reflecting sky, surrounded by fresh green blades of grass, small paw prints at edge, after rain; (5) bottom-left: black Labrador puppy with red bandana running excited circles around a person's brown leather boots and denim jeans, only legs from knees down visible, no face shown, outdoor farm grass; (6) bottom-right: close-up of a cozy worn old blanket with soft texture, warm cream and beige tones, slightly rumpled, lying on a wooden farmhouse floor, warm lamp light, inviting and soft. Real photography, no illustrations, consistent warm farm aesthetic.",
+  "negative_prompt": "cartoon, anime, illustration, 3D render, CGI, human faces, cold lighting, studio backdrop, oversaturated, digital art, painted, watermark, dark moody",
+  "image_input": [
+    "https://raw.githubusercontent.com/graybai0116/vivi-world/main/assets/9ccbcc95-aa61-4f58-907c-219d5fb6bb02.png"
+  ],
+  "api_parameters": {
+    "aspect_ratio": "2:3",
+    "resolution": "1K",
+    "output_format": "jpg"
+  }
+}

@@ -117,7 +117,9 @@ button { cursor: pointer; }
    ===================== */
 .hero {
     min-height: 100dvh;
-    background: linear-gradient(160deg, #e8f6f0 0%, #f0faf5 30%, var(--pink-light) 70%, var(--red-light) 100%);
+    background:
+        linear-gradient(to bottom, transparent 65%, #FEE2E2 100%),
+        linear-gradient(160deg, #e8f6f0 0%, #f0faf5 30%, var(--pink-light) 70%, var(--red-light) 100%);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -382,7 +384,7 @@ button { cursor: pointer; }
    ABOUT SECTION
    ===================== */
 .about-section {
-    background: linear-gradient(to bottom, #FEE2E2 0%, #FFF0F0 80px, #FFF0F0 100%);
+    background: linear-gradient(to bottom, #FEE2E2 0%, #FFF0F0 80px, #FFF0F0 80%, #fffef5 100%);
 }
 
 .about-grid {
@@ -530,10 +532,7 @@ button { cursor: pointer; }
 }
 
 /* Personality tags */
-.personality-section {
-    text-align: center;
-    background: linear-gradient(to bottom, #FFF0F0 0%, #FFFFFF 80px, #FFFFFF 100%);
-}
+.personality-section { text-align: center; }
 
 .personality-title {
     font-size: 1.1rem;
@@ -576,9 +575,9 @@ button { cursor: pointer; }
     background:
         radial-gradient(ellipse 300px 200px at 18% 4%, rgba(255, 210, 80, 0.35) 0%, transparent 70%),
         linear-gradient(to bottom,
-            #FFFFFF 0%,
-            #fff8d6 80px,
-            #fff3cd 12%,
+            #fffef5 0%,
+            #fff8d6 160px,
+            #fff3cd 15%,
             #f4fbf0 32%,
             #edfaf3 52%,
             #fef6e4 70%,
@@ -709,46 +708,51 @@ button { cursor: pointer; }
 .favorites-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2.5rem 2rem;
+    padding: 1rem 0.5rem;
 }
 
 .fav-card {
-    background: var(--white);
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 1.5px solid var(--border);
-    transition: all 0.3s ease;
+    background: #ffffff;
+    border-radius: 3px;
+    overflow: visible;
+    border: none;
+    padding: 10px 10px 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.13), 0 1px 4px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
 }
 
+.fav-card:nth-child(odd)  { transform: rotate(-1.8deg); }
+.fav-card:nth-child(even) { transform: rotate(1.4deg); }
+
 .fav-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--pink);
+    transform: rotate(0deg) scale(1.04) translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+    z-index: 2;
 }
 
 .fav-visual {
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    position: relative;
-    transition: transform 0.4s ease;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 1px;
+    display: block;
+    background: #f5f0eb;
 }
 
-.fav-card:hover .fav-visual {
-    transform: scale(1.04);
+.fav-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .fav-big-emoji {
     font-size: 4.5rem;
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
-    transition: transform 0.3s ease;
 }
 
-.fav-card:hover .fav-big-emoji { transform: scale(1.15) rotate(5deg); }
-
-.fav-info { padding: 1.25rem; }
+.fav-info { padding: 0.9rem 0.3rem 0; }
 
 .fav-info h4 {
     font-size: 1rem;
