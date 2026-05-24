@@ -57,23 +57,42 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 // =====================
+// FIREBASE
+// =====================
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDqpBTdl00WkhBdzfecP8JUKodyp50Is5g",
+    authDomain: "vivi-world-bdcdd.firebaseapp.com",
+    databaseURL: "https://vivi-world-bdcdd-default-rtdb.firebaseio.com",
+    projectId: "vivi-world-bdcdd",
+    storageBucket: "vivi-world-bdcdd.firebasestorage.app",
+    messagingSenderId: "1050055403050",
+    appId: "1:1050055403050:web:766834fdb6de9039b80553"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const messagesRef = ref(db, 'messages');
+
+// =====================
 // MESSAGE BOARD
 // =====================
-const STORAGE_KEY = 'vivi-messages-v2';
-let messages     = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+let messages     = [];
 let selectedMood = '❤️';
 
-// Seed default messages so the board doesn't start empty
-const defaultMessages = [
-    { name: '路过的养狗人', mood: '🐾', content: '刚刷到这个网站，那个追鸡的视频描述笑死我了！小黑狗太有个性，以后要多更新！', time: '5月19日 09:12' },
-    { name: '奶牛粉丝团', mood: '🐄', content: '代表农场的牛大哥留言：小黑狗每次来打招呼都很热情，虽然有点吵，但我们是好朋友。', time: '5月19日 13:45' },
-    { name: '山露星谷旅行者', mood: '🌄', content: '上周来 Vivi 农场玩，亲眼看到小黑狗把那个水坑踩得到处都是泥，太真实了哈哈哈！', time: '5月20日 10:08' },
-];
-
-if (messages.length === 0) {
-    messages = defaultMessages;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
-}
+// Listen for real-time updates from Firebase
+onValue(messagesRef, (snapshot) => {
+    const data = snapshot.val();
+    if (data) {
+        messages = Object.values(data).sort((a, b) => b.timestamp - a.timestamp);
+    } else {
+        messages = [];
+    }
+    renderMessages();
+    updateFooterCount();
+});
 
 // Mood picker
 document.querySelectorAll('.mood-btn').forEach(btn => {
@@ -103,11 +122,7 @@ document.getElementById('submitMsg').addEventListener('click', () => {
     const now = new Date();
     const timeStr = `${now.getMonth() + 1}月${now.getDate()}日 ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
 
-    messages.unshift({ name, mood: selectedMood, content, time: timeStr });
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
-
-    renderMessages();
-    updateFooterCount();
+    push(messagesRef, { name, mood: selectedMood, content, time: timeStr, timestamp: Date.now() });
 
     document.getElementById('msgName').value = '';
     msgContent.value = '';
@@ -180,5 +195,4 @@ document.querySelectorAll(
 // =====================
 // INIT
 // =====================
-renderMessages();
-updateFooterCount();
+// renderMessages and updateFooterCount are triggered by the Firebase onValue listener above
